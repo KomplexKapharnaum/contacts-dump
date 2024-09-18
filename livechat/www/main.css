@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'v50';
+    src: url(./v50.ttf);
+}
+
+@font-face {
+    font-family: 'ark';
+    src: url(./ark.otf);
+}
+
+:root {
+    --color-primary: #00f40d;
+    --color-background: #0D0D0D;
+
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #CED0CE;
+
+    --font-primary: 'v50'; /* v50-regular */
+    --font-secondary: 'v50';
+    --font-big: 'ark';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+    touch-action: pan-x pan-y;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-big);
+    color: var(--color-text-primary);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+button, input[type="text"] {
+    font-family: var(--font-primary);
+    background-color: transparent;
+    border: solid 2px var(--color-primary);
+    color: var(--color-primary);
+    font-size: 22px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}

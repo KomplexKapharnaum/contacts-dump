@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 16px;
+}
+
+#livechat-container {
+    width: 100%;
+    
+    border: solid 1px black;
+    color: white;
+
+    height: 100%;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 16px;
+
+    font-size: 32px;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.message .timestamp {
+    opacity: .5;
+    font-size: .8em;
+    display: none;
+}
+
+.message .username {
+    font-weight: bold;
+    opacity: .5;
+}
+
+.message .text {
+    line-break: anywhere;
+}
+
+.message.admin  {
+    padding: 16px;
+    border-radius: 8px 8px 8px 0px;
+
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    border: solid 2px var(--color-primary);
+
+    font-size: 1.2em;
+
+    position: sticky;
+    top: 0;
+}

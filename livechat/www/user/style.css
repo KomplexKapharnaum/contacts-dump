@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 16px;
+}
+
+#chat-container {
+    width: 100%;
+    
+    pointer-events: none;
+    opacity: 0.5;
+
+    display: flex;
+    gap: 16px;
+}
+
+#chat-container.enabled {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#chatbox {
+    width: 100%;
+}
+
+p {
+    font-size: 22px;
+}
